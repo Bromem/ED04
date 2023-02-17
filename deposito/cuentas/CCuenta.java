@@ -7,15 +7,20 @@ package cuentas;
  * @author Entornos de desarrollo
  * @version 1.0
  * 
+ * 
  * */
 public class CCuenta {
 
 
+	
     private String nombre;
     private String cuenta;
     private double saldo;
 	private double tipoInterés;
 	
+	/**
+	 * Getter y setters de la clase.
+	 * */
     private String getNombre() {
 		return nombre;
 	}
