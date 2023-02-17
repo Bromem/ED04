@@ -1,4 +1,13 @@
 package cuentas;
+
+/**
+ * Esta clase se ha diseñado para probar los conceptos aprendidos en ED04 y simula algunas de la funciones de
+ * una aplicación bancaria.
+ * 
+ * @author Entornos de desarrollo
+ * @version 1.0
+ * 
+ * */
 public class CCuenta {
 
 
@@ -40,11 +49,19 @@ public class CCuenta {
 	}
 
 
-
+	/**
+	 * Constructor por defecto
+	 * */
     public CCuenta()
     {
     }
-
+    /**
+     * Constructor con parámetros
+     * 
+     * @param nom
+     * @param cue
+     * @param tipo
+     * */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -52,11 +69,20 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     * 
+     * Devuelve el estado del saldo
+     * */
     public double estado()
     {
         return saldo;
     }
 
+    /**
+     * Permite hacer un ingreso.
+     * @param cantidad
+     * @throws Exception si la cantidad es negativa
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -64,6 +90,11 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+    /**
+     *Permite hacer un reintegro
+     *@param cantidad
+     *@throws Exception si la cantidad es 0 o negativa.
+     * */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
