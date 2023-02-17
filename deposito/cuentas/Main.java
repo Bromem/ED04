@@ -9,6 +9,11 @@ public class Main {
         operativa_cuenta(miCuenta1, 0);
     }
 
+    /**
+     * Introducir el método operativa_cuenta, que englobe las sentencias de la clase Main que operan con el objeto cuenta1.
+     * @param miCuenta1
+     * @param cantidad
+     * */
 	private static void operativa_cuenta(CCuenta miCuenta1, float cantidad) {
 		double saldoActual;
 		saldoActual = miCuenta1.estado();
